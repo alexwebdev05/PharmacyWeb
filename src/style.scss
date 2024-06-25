@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #54CEE9;
+  --color1: rgb(0, 0, 0);
+  --color2: rgb(255, 255, 255);
+
+  --sec-color1: #B4DE8C;
+  --sec-color2: #EFDD7E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color1);
+  font-family: 'poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw; 
+  height: 200vh; 
+}
+
