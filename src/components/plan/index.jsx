@@ -13,7 +13,7 @@ function Plan() {
                             <p><img src="tickGreen.svg" className="tick" />Special offers on many of our products</p>
                             <p><img src="tickGreen.svg" className="tick" />20 € per month to buy our products</p>
                         </div>
-                        
+                            
                     </section>
 
                     <section className='options'>
@@ -25,7 +25,7 @@ function Plan() {
                             <p><img src="tickBlue.svg" className="tick" />Personal medic assistant</p>
                             <p><img src="tickBlue.svg" className="tick" />One free gift per month</p>
                         </div>
-                        
+                            
                     </section>
 
                     <section className='options'>
@@ -40,7 +40,7 @@ function Plan() {
                             <p><img src="tickGold.svg" className="tick" />Urgence assistant</p>
                             <p><img src="tickGold.svg" className="tick" />More priority than other clients</p>
                         </div>
-                        
+                            
                     </section>
                 </section>
                 <section id='buttons'>

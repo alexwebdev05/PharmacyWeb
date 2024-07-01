@@ -10,13 +10,12 @@ import { myCamera } from './scene/camera'
 import { modelCreator } from './scene/models/modelCreator'
 import { models } from './scene/models/modelList'
 
+import styles from './three.module.css'
+
 function Three() {
   const mountRef = useRef(null);
   const modelRef = useRef(null);
-
-  // Models
   
-
   useEffect(() => {
     const mount = mountRef.current;
     const camera = myCamera(mount)
@@ -65,7 +64,7 @@ function Three() {
 
   return (
     <>
-      <div ref={mountRef} style={{ width: '25rem', height: '400px', margin: '0', marginRight: '5rem' }} />
+      <div ref={mountRef} className={styles.container} />
     </>
   );
 }
