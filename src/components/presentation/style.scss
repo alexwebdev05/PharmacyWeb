@@ -16,6 +16,10 @@
   margin-right: 0.5rem;
 }
 
+#pName span {
+  font-weight: 800;
+}
+
 
 /* Priority phrase */
 #pPhraseContainer {
@@ -31,6 +35,7 @@
 
 #pPhrase {
   margin-left: 6rem;
+  font-weight: 800;
 }
 
 #pPhrase span {
@@ -47,43 +52,14 @@
 }
 
   #info {
-    margin: 2rem 5rem;
-    z-index: 2;
-  }
-
-  #text {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-  }
-  /* Secundary phrase */
-  #phrase {
-    width: 40%;
-    min-width: 22rem;
-    font-size: 1.2rem;
-    color: var(--color1);
-  }
-
-  #qualityes {
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
-    min-width: 16rem;
-    color: var(--color1);
+    margin: 0 5rem;
+    z-index: 2;
   }
-
-  .divider {
-    border: 0;
-    height: 5rem;
-    width: 3px;
-    border-radius: 1rem;
-    background-color: var(--color1);
-    margin: 20px 0;
-  }
-
-
+  
   /* Discounts */
   #discTitle {
     display: flex;
@@ -92,23 +68,12 @@
 
   #discTitle p {
     position: relative;
-    width: 23.8rem;
+    width: 25rem;
 
     font-size: 2.2rem;
+    font-weight: 800;
     text-align: center;
     z-index: 2;
-  }
-
-  #wordLine {
-    position: relative;
-    top: -1.3rem;
-    left: 0.5rem;
-
-    width: 100%;
-    height: 1rem;
-
-    background-color: var(--primary-color);
-    z-index: -1;
   }
 
   #discountContainer {
@@ -136,6 +101,8 @@
     margin-left: 3rem;
     margin-top: 0.4rem;
 
+    font-weight: 800;
+
     color: var(--color2);
 
     z-index: 2;
@@ -147,6 +114,7 @@
     top: -1rem;
 
     font-size: 4.5rem;
+    font-weight: 800;
 
     color: var(--color2);
     z-index: 1;
@@ -154,8 +122,61 @@
 
   .discounts span sup {
     font-size: 2.5rem;
+    font-weight: 800;
 
     color: var(--color2);
+  }
+
+  
+  /* Secundary phrase */
+  #text {
+    height: 30%;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  #phrase {
+    max-width: 30rem;
+    min-width: 22rem;
+    font-size: 1.2rem;
+    color: var(--color1);
+  }
+
+  #qualityes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 16rem;
+    color: var(--color1);
+  }
+
+  .divider {
+    border: 0;
+    height: 5rem;
+    width: 3px;
+    border-radius: 1rem;
+    background-color: var(--color1);
+    color: var(--color1);
+    margin: 20px 2rem;
+  }
+
+
+  
+
+  #wordLine {
+    position: relative;
+    top: -1.3rem;
+    left: 0.5rem;
+
+    width: 100%;
+    height: 1rem;
+
+    background-color: var(--primary-color);
+    z-index: -1;
   }
 
   /* Extra */
@@ -190,4 +211,129 @@
   border: none;
   border-radius: 1rem;
   background-color: var(--primary-color);
+  z-index: 5;
+  cursor: pointer;
+}
+
+// Scale up to 1920 x 1080
+@media (min-height: 1081px) or (min-width: 1921px) {
+  #discTitle p {
+    width: 33.7rem;
+    font-size: 3rem;
+  }
+
+  #phrase {
+    max-width: 60rem;
+    font-size: 2rem;
+  }
+
+  #qualityes p {
+    font-size: 1.6rem;
+  }
+
+  .discounts {
+    width: 15rem;
+    height: 11rem;
+  }
+
+  .discounts div {
+    font-size: 1.8rem;
+    margin-left: 4.5rem;
+  }
+
+  .discounts span {
+    font-size: 7rem;
+    left: 1.6rem;
+    top: -1.5rem;
+  }
+
+  #seeOffers button {
+    width: 15rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+// Scale under 1440 x 900
+@media (max-width: 1300px) or (max-height: 1200px) {
+  #pName span {
+    font-size: 0.8rem;
+  }
+
+  #pName img {
+    width: 1rem;
+  }
+
+  #phrase {
+    font-size: 1.5rem;
+  }
+
+  #pPhraseContainer {
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .discounts {
+    width: 6rem;
+    height: 5rem;
+
+    border-start-start-radius: 0.5rem;
+    border-end-end-radius: 0.5rem;
+    border-start-end-radius: 1.5rem;
+    border-end-start-radius: 1.5rem;
+  }
+
+  .discounts div {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .discounts span {
+    font-size: 2.6rem;  
+    top: -0.5rem;  
+    left: 0.5rem;
+  }
+
+  .discounts span sup {
+    font-size: 1.5rem;
+  }
+
+  #text {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  #phrase, #qualityes {
+    flex: 0 0 50%;
+  }
+
+}
+
+// Phone
+@media (max-width: 600px) or (max-height: 1000px) {
+
+  #pPhraseContainer {
+    height: 4rem;
+  }
+
+  #pPhrase {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #discTitle {
+    width: 13.5rem;
+  }
+
+  #wordLine {
+    top: -0.7rem;
+    height: 0.5rem;
+  }
+
+  #discTitle p {
+    font-size: 1.2rem;
+  }
 }

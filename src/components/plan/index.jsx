@@ -3,51 +3,51 @@ import './style.scss'
 function Plan() {
     return (
         <>
-            <section id='presentation'>
-                <div id='titleOffers'><p>Offers</p></div>
+            <section id='plansContainer'>
                 <section id='plans'>
-                    <section className='options'>
-                        <h2>Basic</h2>
+                    <section id='bPlan'>
+                        <h2 className='pTitles'>Basic</h2>
                         <div>
-                            <p><img src="tickGreen.svg" className="tick" />Customer service in next 5 hours</p>
+                            <p>This is the perfect plan if you want good service at a low cost.</p>
+                            <h2 className='prices'>15€<span className='monthly'>/Month</span></h2>
+                            <button id='bButton'>Get it now</button>
+                            <p><img src="tickGreen.svg" className="tick" />Customer service within 5 hours</p>
                             <p><img src="tickGreen.svg" className="tick" />Special offers on many of our products</p>
-                            <p><img src="tickGreen.svg" className="tick" />20 € per month to buy our products</p>
+                            <p><img src="tickGreen.svg" className="tick" />20€ per month to buy our products</p>
+                            <p><img src="tickGreen.svg" className="tick" />Urgency assistance</p>
                         </div>
-                            
                     </section>
 
-                    <section className='options'>
-                        <h2>Medium</h2>
-                        <div>
-                            <p><img src="tickBlue.svg" className="tick" />Customer service in next 5 hours</p>
-                            <p><img src="tickBlue.svg" className="tick" />Special offers on many of our products</p>
-                            <p><img src="tickBlue.svg" className="tick" />30 € per month to buy our products</p>
-                            <p><img src="tickBlue.svg" className="tick" />Personal medic assistant</p>
-                            <p><img src="tickBlue.svg" className="tick" />One free gift per month</p>
+                    <section id='containerMPlan'>
+                        <span id='popular'>Most popular</span>
+                        <div id='mPlan'>
+                            <h2 className='pTitles'>Medium</h2>
+                            <div>
+                            <p>Are you looking for the best plan at a good price? This is your plan!</p>
+                                <h2 className='prices'>20€<span className='monthly'>/Month</span></h2>
+                                <button id='mButton'>Get it now</button>
+                                <p><img src="tickBlue.svg" className="tick" />Special offers on all of our products</p>
+                                <p><img src="tickBlue.svg" className="tick" />30€ per month to buy our products</p>
+                                <p><img src="tickBlue.svg" className="tick" />Personal medic assistant</p>
+                                <p><img src="tickBlue.svg" className="tick" />One free gift per month</p>
+                            </div>
                         </div>
-                            
                     </section>
 
-                    <section className='options'>
-                        <h2>Premium</h2>
+                    <section id='pPlan'>
+                        <h2 className='pTitles'>Premium</h2>
                         <div>
-                            <p><img src="tickGold.svg" className="tick" />Customer service in next 5 hours</p>
-                            <p><img src="tickGold.svg" className="tick" />Special offers on many of our products</p>
-                            <p><img src="tickGold.svg" className="tick" />45 € per month to buy our products</p>
-                            <p><img src="tickGold.svg" className="tick" />Personal medic assistant</p>
-                            <p><img src="tickGold.svg" className="tick" />Two free gift per month</p>
-                            <p><img src="tickGold.svg" className="tick" />Free medic analytic</p>
-                            <p><img src="tickGold.svg" className="tick" />Urgence assistant</p>
+                        <p>If you need a full plan with high priority, it is perfect for you.</p>
+                            <h2 className='prices'>30€<span className='monthly'>/Month</span></h2>
+                            <button id='pButton'>Get it now</button>
+                            <p><img src="tickGold.svg" className="tick" />45€ per month to buy our products</p>
+                            <p><img src="tickGold.svg" className="tick" />Two free gifts per month</p>
+                            <p><img src="tickGold.svg" className="tick" />Free medic analysis</p>
                             <p><img src="tickGold.svg" className="tick" />More priority than other clients</p>
                         </div>
-                            
                     </section>
                 </section>
-                <section id='buttons'>
-                    <button id='b1'>15€</button>
-                    <button id='b2'>20€</button>
-                    <button id='b3'>30€</button>
-                </section>
+                <footer>This is a personal project made all by me to demostrate my abilities in web developement, all code is in<a href="https://github.com/alexwebdev05" target="_blank">my github</a></footer>
             </section>
         </>
     )

@@ -51,7 +51,7 @@ function Presentation() {
                         {/* Prase */}
                         <section id='text'>
                             <div id="phrase">
-                                <p>At Priority pharmacy we are committed to offering the best products at an 
+                                <p>At Priority pharmacy, we are committed to offering the best products at 
                                     affordable price and with exceptional customer service.
                                 </p>
                             </div>
@@ -63,23 +63,29 @@ function Presentation() {
                                 <p className="extra"><img src="tickBlue.svg" className="tick" />Faster assistant</p>
                                 <p className="extra"><img src="tickBlue.svg" className="tick" />Best prices</p>
                             </div>
+                            
                         </section>
-
-                    </div>
-
-                    {/* 3D */}
                     <Three />
+                    </div>
 
                 </section>
 
                 {/* Offers */}
                 <div id="seeOffers">
-                    <button>See offers</button>
+                    <button onClick={() => scrollToSection('plansContainer')}>See offers</button>
                 </div>
 
             </div>
         </>
     )
 }
+
+// Scroll function
+const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 export default Presentation

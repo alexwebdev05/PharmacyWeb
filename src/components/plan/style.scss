@@ -1,86 +1,160 @@
-#presentation {
+:root {
+    --border1: rgba(128, 128, 128, 0.15);
+    --grey-text: rgb(105, 105, 105);
+}
+
+#plansContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
-
-    background: linear-gradient(var(--color2) ,var(--primary-color));
 }
 
-#titleOffers {
-    width: 75rem;
+// Plans
+#plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#plans p {
+    margin: 0.3rem 0;
+    color: var(--grey-text);
+}
+
+.pTitles {
+
+}
+
+#bPlan,  #pPlan {
+    width: 22rem;
+    margin: 0.5rem;
+    padding: 1rem;
+
+    border-radius: 0.8rem;
+    border: 3px solid var(--border1);
+}
+
+#bButton, #pButton {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+
+    border-radius: 0.5rem;
+
+    background-color: transparent;
+    border: 3px solid var(--border1);
+    color: var(--color1);
+    cursor: pointer;
+}
+
+// Money
+
+.prices {
+    display: flex;
+    align-items: center;
+
+    margin: 1rem 0;
+
+    font-size: 2.5rem;
+    color: var(--color1);
+}
+
+.monthly {
+    font-size: 1rem;
+
+    margin-left: 0.5rem;
+    color: var(--grey-text);
+}
+
+// Medium plan
+#containerMPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 22rem;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+
+    border-radius: 0.9rem;
+    border: 3px solid var(--border1);
+
+    background-color: var(--primary-color);
+
+    overflow: hidden;
+}
+
+#popular {
+    margin-bottom: 0.5rem;
+    color: var(--color2);
+}
+
+#mPlan {
+    height: 100%;
+
+    padding: 1rem;
+    border-radius: 0.8rem;
+
+    background-color: var(--color2);
+}
+
+#mButton {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+
+    border-radius: 0.5rem;
+    border: none;
+
+    background-color: var(--primary-color);
+    border: 3px solid var(--border1);
+    color: var(--color2);
+    cursor: pointer;
+}
+
+// Footer
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    height: 5rem;
-
-    border-start-start-radius: 2rem;
-    border-start-end-radius: 2rem;
+    width: 100vw;
+    height: 3rem;
     background-color: var(--primary-color);
-}
-
-#plans {
-    display: flex;
-    justify-content: space-around;
-
-    width: 75rem;
-
-    background-color: var(--color2);
-}
-
-.options {
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.options p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.options img {
-    margin-right: 0.5rem;
-}
-
-#buttons {
-    display: flex;
-    justify-content: space-around;
-    width: 75rem;
-    
-    border-end-start-radius: 2rem;
-    border-end-end-radius: 2rem;
-
-    background-color: var(--color2);
-}
-
-#buttons button {
-    padding: 0.5rem 2rem;
-    margin-bottom: 3rem;
-    width: 15rem;
-    height: 4rem;
-
-    font-size: 2rem;
     color: var(--color2);
-
-    border-radius: 2rem;
-    border: none;
-    overflow: hidden;
 }
 
-#b1 {
-    background-color: var(--sec-color1);
+a {
+    margin-left: 0.3rem;
+
+    color: rgb(17, 0, 255);
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#b2 {
-    background-color: var(--primary-color);
-}
+// Scale up to 1920 x 1080
+@media (min-height: 1081px) {
+    #bPlan, #containerMPlan, #pPlan {
+        width: 30rem;
+    }
 
-#b3 {
-    background-color: var(--sec-color2);
+    #plans p {
+        font-size: 1.2rem;
+    }
+
+    .pTitles {
+        font-size: 2.5rem;
+    }
+
+    .prices {
+        font-size: 3rem;
+    }
 }
