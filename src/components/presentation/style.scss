@@ -216,7 +216,7 @@
 }
 
 // Scale up to 1920 x 1080
-@media (min-height: 1081px) or (min-width: 1921px) {
+@media (min-height: 1090px) or (min-width: 1930px) {
   #discTitle p {
     width: 33.7rem;
     font-size: 3rem;
@@ -255,7 +255,7 @@
 }
 
 // Scale under 1440 x 900
-@media (max-width: 1300px) or (max-height: 1200px) {
+@media (max-width: 1200px) or (max-height: 700px) {
   #pName span {
     font-size: 0.8rem;
   }
@@ -284,14 +284,14 @@
   }
 
   .discounts div {
-    margin-left: 1.5rem;
+    margin-left: 1.7rem;
     font-size: 1rem;
   }
 
   .discounts span {
-    font-size: 2.6rem;  
+    font-size: 3rem;  
     top: -0.5rem;  
-    left: 0.5rem;
+    left: 0.7rem;
   }
 
   .discounts span sup {
@@ -313,19 +313,22 @@
 }
 
 // Phone
-@media (max-width: 600px) or (max-height: 1000px) {
+@media (max-width: 600px) or (max-height: 700px) {
+
+  #info {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
 
   #pPhraseContainer {
     height: 4rem;
+    overflow: hidden;
   }
 
   #pPhrase {
     margin-left: 1rem;
     font-size: 1.5rem;
-  }
-
-  #discTitle {
-    width: 13.5rem;
+    overflow: hidden;
   }
 
   #wordLine {
@@ -335,5 +338,21 @@
 
   #discTitle p {
     font-size: 1.2rem;
+    width: 11.2rem;
+    overflow: hidden;
   }
+
+  #discountContainer {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  #phrase {
+    font-size: 1rem;
+  }
+
+  #qualityes p {
+    font-size: 1rem;
+  }
+
 }

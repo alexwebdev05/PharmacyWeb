@@ -129,6 +129,9 @@ footer {
     width: 100vw;
     height: 3rem;
     background-color: var(--primary-color);
+}
+
+footer span {
     color: var(--color2);
 }
 
@@ -141,7 +144,7 @@ a {
 }
 
 // Scale up to 1920 x 1080
-@media (min-height: 1081px) {
+@media (min-height: 1090px) or (min-width: 1930px) {
     #bPlan, #containerMPlan, #pPlan {
         width: 30rem;
     }
@@ -157,4 +160,40 @@ a {
     .prices {
         font-size: 3rem;
     }
+}
+
+// Phone
+@media (max-width: 600px) or (max-height: 700px) {
+
+    #plansContainer {
+        height: auto;
+    }
+
+    #plans {
+        flex-direction: column;
+        margin: 1rem 3rem;
+    }
+
+    .prices {
+        font-size: 1.5rem;
+    }
+
+    .monthly {
+        font-size: 0.7rem;
+    }
+
+    #plans p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    footer span {
+        margin: 0 2rem;
+    }
+
 }

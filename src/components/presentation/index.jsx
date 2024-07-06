@@ -63,9 +63,9 @@ function Presentation() {
                                 <p className="extra"><img src="tickBlue.svg" className="tick" />Faster assistant</p>
                                 <p className="extra"><img src="tickBlue.svg" className="tick" />Best prices</p>
                             </div>
+                            <Three />
                             
                         </section>
-                    <Three />
                     </div>
 
                 </section>
