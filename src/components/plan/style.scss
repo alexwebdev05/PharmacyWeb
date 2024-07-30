@@ -162,8 +162,7 @@ a {
     }
 }
 
-// Phone
-@media (max-width: 600px) or (max-height: 700px) {
+@media (max-width: 1200px) {
 
     #plansContainer {
         height: auto;
@@ -173,10 +172,10 @@ a {
         flex-direction: column;
         margin: 1rem 3rem;
     }
+}
 
-    .prices {
-        font-size: 1.5rem;
-    }
+// Phone
+@media (max-width: 600px) or (max-height: 700px) {
 
     .monthly {
         font-size: 0.7rem;
